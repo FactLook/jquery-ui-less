@@ -1,4 +1,4 @@
-# JQuery-UI LESS check this out ! 
+# JQuery-UI LESS
 
 A simple conversion of the JQuery-UI CSS components into .less files.
 
