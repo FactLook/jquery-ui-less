@@ -2,3 +2,4 @@ node_modules
 components
 .idea
 demo/themes
+demo/demo_slate.less
