@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="demo.css" rel="stylesheet">
+
+    <!-- jQuerUI and jQGrid Stylesheets -->
+
+    <link rel="stylesheet" href="assets/portlets.css">
+    <!-- Custom styles for this template 
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+-->
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../navbar/">Default</a></li>
+                <li><a href="../navbar-static-top/">Static top</a></li>
+                <li class="active"><a href="../../../Desktop">Fixed top</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+    
+        <div class="col-md-12">
+            <div class="col-md-8">
+            
+                <h2>Portlets</h2>
+                <div class="column">
+
+                    <div class="portlet">
+                        <div class="portlet-header">Feeds</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+
+                    <div class="portlet">
+                        <div class="portlet-header">News</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+
+                </div>
+
+                <div class="column">
+
+                    <div class="portlet">
+                        <div class="portlet-header">Shopping</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+
+                </div>
+
+                <div class="column">
+
+                    <div class="portlet">
+                        <div class="portlet-header">Links</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+
+                    <div class="portlet">
+                        <div class="portlet-header">Images</div>
+                        <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                    </div>
+
+                </div>
+                
+                <div class="clearfix"></div>
+                <hr />
+                <h2>Menu</h2>
+                <ul id="menu">
+                    <li class="ui-state-disabled"><a href="#">Aberdeen</a></li>
+                    <li><a href="#">Ada</a></li>
+                    <li><a href="#">Adamsville</a></li>
+                    <li><a href="#">Addyston</a></li>
+                    <li>
+                        <a href="#">Delphi</a>
+                        <ul>
+                            <li class="ui-state-disabled"><a href="#">Ada</a></li>
+                            <li><a href="#">Saarland</a></li>
+                            <li><a href="#">Salzburg</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Saarland</a></li>
+                    <li>
+                        <a href="#">Salzburg</a>
+                        <ul>
+                            <li>
+                                <a href="#">Delphi</a>
+                                <ul>
+                                    <li><a href="#">Ada</a></li>
+                                    <li><a href="#">Saarland</a></li>
+                                    <li><a href="#">Salzburg</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Delphi</a>
+                                <ul>
+                                    <li><a href="#">Ada</a></li>
+                                    <li><a href="#">Saarland</a></li>
+                                    <li><a href="#">Salzburg</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Perch</a></li>
+                        </ul>
+                    </li>
+                    <li class="ui-state-disabled"><a href="#">Amesville</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+            <h2>Dialog</h2>
+            <span id="openDialogBtn" class="btn btn-primary">Open Dialog</span>
+            <div id="dialog-confirm" title="Empty the recycle bin?" class="hidden">
+                <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+            </div>
+            <!-- <h2>Table</h2>
+            <table id="articles"></table>
+            <div id="articlePager"></div> -->
+            <hr />
+            <h2>Datepicker</h2>
+            <p>Date: <input type="text" id="datepicker"></p>
+            <hr />
+                <h2>Accordeon</h2>
+                <div id="accordion">
+                    <h3>Section 1</h3>
+                    <div>
+                        <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                    </div>
+                    <h3>Section 2</h3>
+                    <div>
+                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                    </div>
+                    <h3>Section 3</h3>
+                    <div>
+                        <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                        <ul>
+                            <li>List item one</li>
+                            <li>List item two</li>
+                            <li>List item three</li>
+                        </ul>
+                    </div>
+                    <h3>Section 4</h3>
+                    <div>
+                        <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                    </div>
+                </div>
+            </div>
+            
+      
+    <div class="col-md-8">        
+    
+        </div>
+    <div class="col-md-4">
+           
+    </div>
+  </div>            
+    
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="../jqueryUI/jquery-1.10.2.js"></script> 
+<script src="assets/jquery-ui-1.10.4.custom.js"></script> 
+<script src="../bootstrap/dist/js/bootstrap.min.js"></script> 
+<script>
+    $(function() {
+        
+        $( "#menu" ).menu();
+        
+        $( "#datepicker" ).datepicker();
+       
+        $( ".column" ).sortable({
+            connectWith: ".column",
+            handle: ".portlet-header",
+            cancel: ".portlet-toggle",
+            placeholder: "portlet-placeholder ui-corner-all"
+        });
+
+        $( "#accordion" ).accordion({
+            collapsible: true
+        });
+        $("#openDialogBtn").on('click', function(){
+            $( "#dialog-confirm" ).dialog({
+                resizable: false,
+                height:140,
+                modal: true,
+                buttons: {
+                    "Delete all items": function() {
+                        $( this ).dialog( "close" );
+                    },
+                    Cancel: function() {
+                        $( this ).dialog( "close" );
+                    }
+                }
+            });
+
+        });
+        
+        $( ".portlet" )
+                .addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
+                .find( ".portlet-header" )
+                .addClass( "ui-widget-header ui-corner-all" )
+                .prepend( "<span class='ui-icon ui-icon-minusthick portlet-toggle'></span>");
+
+        $( ".portlet-toggle" ).click(function() {
+            var icon = $( this );
+            icon.toggleClass( "ui-icon-minusthick ui-icon-plusthick" );
+            icon.closest( ".portlet" ).find( ".portlet-content" ).toggle();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
