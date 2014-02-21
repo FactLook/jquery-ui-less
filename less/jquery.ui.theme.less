@@ -15,9 +15,14 @@
 /* Component containers
 ----------------------------------*/
 .ui-widget {
-	font-family: @ui_ffDefault;
-	font-size: @ui_fsDefault;
+  font-family: @ui_ffDefault;
+  font-size: @ui_fsDefault;
+  box-sizing: content-box!important;
 }
+.ui-widget *{
+  
+}
+
 .ui-widget .ui-widget {
 	font-size: 1em;
 }
@@ -159,6 +164,7 @@
 .ui-icon {
 	width: 16px;
 	height: 16px;
+    font-size: 13px; 
 }
 .ui-icon,
 .ui-widget-content .ui-icon {
@@ -300,9 +306,9 @@
 .ui-icon-link {       .glyphicon-question-sign;}
 .ui-icon-cancel {     .glyphicon-question-sign;}
 .ui-icon-plus {       .glyphicon-plus;}
-.ui-icon-plusthick {  .glyphicon-plus-sign;}
+.ui-icon-plusthick {  .glyphicon-plus;}
 .ui-icon-minus {      .glyphicon-question-sign;}
-.ui-icon-minusthick { .glyphicon-question-sign;}
+.ui-icon-minusthick { .glyphicon-minus;}
 .ui-icon-close {      .glyphicon-question-sign;}
 .ui-icon-closethick { .glyphicon-remove-sign;}
 .ui-icon-key {        .glyphicon-question-sign;}
