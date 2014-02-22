@@ -13,7 +13,7 @@
     <title>Fixed Top Navbar Example for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="stylesheets/demo_slate.css" rel="stylesheet">
+    <link id="mainStyleSheet" href="stylesheets/demo_slate.css" rel="stylesheet">
 
 
     <!-- Custom styles for this template 
@@ -52,9 +52,9 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theme<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
+                        <li><a class="chooseTheme" id="slate" href="#">Bootswatch "Slate"</a></li>
                         <li><a href="#">Another action</a></li>
                         <li><a href="#">Something else here</a></li>
                         <li class="divider"></li>
@@ -285,7 +285,11 @@
         });
         $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
                 " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-
+        
+        $(".chooseTheme").on('click', function(e){
+            e.preventDefault();
+            $('#mainStyleSheet').attr('href', 'stylesheets/demo_'+this.id+'.css');
+        })
     });
 </script>
 
