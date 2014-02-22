@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +8,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <title>jQuery theming for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link id="mainStyleSheet" href="demo_default.css" rel="stylesheet">
@@ -44,7 +42,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">jQueryUI LESS</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -80,7 +78,7 @@
             <h3>Make jQueryUI Widgets Blend in with Bootstrap Themes</h3>
             <p>This is the demopage for jquery-ui-twbs-less. Derived from lphuberdeau's jquery-ui-less.</p>
             <p>
-                Play around here switching between the demo themes or go to the project page on 
+                Play around here switching between the demo themes or go to the project page on
                 <a href="https://github.com/DC-development/jquery-ui-less">github</a>.
             </p>
             <p>
@@ -97,13 +95,43 @@
                 </li>
             </ul>
             <p>
-            <h4>Files to generate from:</h4> 
-                <div class ="well">
-                    <b>less/jquery.ui.less</b>, <br />which includes the variables and the jquery-ui-all file. This is the file to compile back to CSS.</li>
-                    <b>less/jquery.ui.variables.less</b>,<br /> containing all extracted variables.</li>
-                </div>
+            <h4>Files to generate from:</h4>
+            <div class ="well">
+                <b>less/jquery.ui.less</b>, <br />which includes the variables and the jquery-ui-all file. This is the file to compile back to CSS.</li>
+                <b>less/jquery.ui.variables.less</b>,<br /> containing all extracted variables.</li>
+            </div>
             </p>
             <hr />
+            <div class="alert alert-danger" style="overflow:hidden">
+                <strong>Bad:</strong> Some icons are not registered in var's, yet ! <br />
+                Everywhere you see a little <i class="glyphicon glyphicon-question-sign"></i> instead of the correct icon.
+
+                <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> I don't mind</a>
+                <span class="pull-right">&nbsp;</span>
+                <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-tree-deciduous"></i> I'll fix it !</a>
+            </div>
+            <div class="alert alert-danger" style="overflow:hidden">
+                <strong>Bad:</strong> Some default colors are not exchanged for twbs-vars, yet ! <br />
+                Everywhere you see rather strange, not fitting colors.
+
+                <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> I don't mind</a>
+                <span class="pull-right">&nbsp;</span>
+                <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-tree-deciduous"></i> I'll fix it !</a>
+            </div>
+            <div class="alert alert-success" style="overflow:hidden">
+                <strong>Good:</strong> By using CSS and fonts only, we will have all the advantages<br /> of displaying techniques at the convenience of a jqueryUI plugin.
+
+               <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> Cheers!</a>
+                <span class="pull-right">&nbsp;</span>
+               <!-- <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-thumbs-up"></i> I'll buy you a beer!</a>-->
+            </div>
+            <div class="alert alert-success" style="overflow:hidden">
+                <strong>Good:</strong> Everything thats broken here is pretty easy to fix
+
+                <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> Cheers!</a>
+                <span class="pull-right">&nbsp;</span>
+                <!-- <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-thumbs-up"></i> I'll buy you a beer!</a>-->
+            </div>
             <h2>Portlets</h2>
             <div class="column">
 
@@ -185,6 +213,7 @@
             </ul>
         </div>
         <div class="col-md-4">
+            
             <h2>Datepicker</h2>
             <p>Date: <input type="text" id="datepicker"></p>
 
