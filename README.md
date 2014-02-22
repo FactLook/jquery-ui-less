@@ -8,5 +8,7 @@ from TWBS with jQuery UI comps.
 
 Goal for this branch is to make all jQUeryUI widgets use glyphicons and follow, whatever bootstrap theme used, in your project.
 
+live demo of development state here: http://dc-development.github.io/jquery-ui-less/
+
 Note that this is an VERY early stage project. Feel free to submit pull requests, or report issues.
 
