@@ -11,12 +11,12 @@ Goal for this branch is to make all jQUeryUI widgets use glyphicons and follow, 
 Example usage:
 -----------------------------------------
 
-@import "../bootstrap/less/bootstrap";
-@import "../less/jquery.ui.less";
-
-@import "themes/variables_cerulean";
-@import "themes/bootswatch_cerulean";
-
+@import "../bootstrap/less/bootstrap";</br>
+@import "../less/jquery.ui.less";</br>
+</br>
+@import "themes/variables_cerulean";</br>
+@import "themes/bootswatch_cerulean";</br>
+</br>
 @import "demovars.less";
 
 ------------------------------------------
