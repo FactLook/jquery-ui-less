@@ -1,4 +1,4 @@
-# JQuery-UI LESS Adaption for TWBS (3.0.0)
+# JQuery-UI LESS Adaption for TWBS 3.0
 
 This was a simple conversion of the JQuery-UI CSS components into .less files. 
 By Louis-Philippe Huberdeau. Wich came in pretty handy, as I need it to have consistent (themeable) styles
