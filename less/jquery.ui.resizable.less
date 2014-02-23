@@ -53,7 +53,8 @@
 	width: 12px;
 	height: 12px;
 	right: 1px;
-	bottom: 1px;
+	bottom: 1px!important; //FIxes the position wich gets broken by mixin (ui-icon)
+    top: auto!important;
 }
 .ui-resizable-sw {
 	cursor: sw-resize;
