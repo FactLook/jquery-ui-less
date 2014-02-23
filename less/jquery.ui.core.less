@@ -72,9 +72,11 @@
 ----------------------------------*/
 .ui-icon {
   .glyphicon; // Mixin in the basic .glyphicon properties
+  
 }
 /* states and images */
-h3 > ui.icon,
+.ui-widget-header .ui-icon,
+h3 > .ui-icon,
 div > .ui-icon,
 span > .ui-icon,
 td > .ui-icon,{
@@ -82,6 +84,7 @@ td > .ui-icon,{
   .btn-default;
   .btn-sm;
   .glyphicon; // Mixin in the basic .glyphicon properties
+  top:0;
 }
 
 
