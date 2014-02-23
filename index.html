@@ -57,6 +57,7 @@
                         <li><a class="chooseTheme" id="amelia" href="#">Bootswatch Amelia</a></li>
                         <li><a class="chooseTheme" id="cerulean" href="#">Bootswatch Cerulean</a></li>
                         <li><a class="chooseTheme" id="superhero" href="#">Bootswatch Superhero</a></li>
+                        <li><a class="chooseTheme" id="flatly" href="#">Bootswatch Flatly</a></li>
 
                     </ul>
                 </li>
@@ -74,204 +75,212 @@
 <div class="container">
 
 <div class="col-md-12">
-    <div class="col-md-8">
-        <h2>jQueryUI LESS for TWBS 3.0.0</h2>
-        <h3>Make jQueryUI Widgets Blend in with Bootstrap Themes</h3>
-        <p>This is the demopage for jquery-ui-twbs-less. Derived from lphuberdeau's jquery-ui-less.</p>
-        <p>
-            Play around here switching between the demo themes or go to the project page on
-            <a href="https://github.com/DC-development/jquery-ui-less">github</a>.
-        </p>
-        <p>
-        <h4>It uses:</h4>
-        <ul>
-            <li>
-                jquery v1.11.0
-            </li>
-            <li>
-                jquery-ui v1.10.4 (custom build with no theme)
-            </li>
-            <li>
-                bootstrap
-            </li>
-        </ul>
-        <p>
-        <h4>Files to generate from:</h4>
-        <div class ="well">
-            <b>less/jquery.ui.less</b>, <br />which includes the variables and the jquery-ui-all file. This is the file to compile back to CSS.</li>
-            <b>less/jquery.ui.variables.less</b>,<br /> containing all extracted variables.</li>
-        </div>
-        </p>
-        <hr />
-        <div class="alert alert-danger" style="overflow:hidden">
-            <strong>Bad:</strong> Some icons are not registered in var's, yet ! <br />
-            Everywhere you see a little <i class="glyphicon glyphicon-question-sign"></i> instead of the correct icon.
+<div class="col-md-8">
 
-            <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> I don't mind</a>
-            <span class="pull-right">&nbsp;</span>
-            <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-tree-deciduous"></i> I'll fix it !</a>
-        </div>
-        <div class="alert alert-danger" style="overflow:hidden">
-            <strong>Bad:</strong> Some default colors are not exchanged for twbs-vars, yet ! <br />
-            Everywhere you see rather strange, not fitting colors.
-
-            <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> I don't mind</a>
-            <span class="pull-right">&nbsp;</span>
-            <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-tree-deciduous"></i> I'll fix it !</a>
-        </div>
-        <div class="alert alert-success" style="overflow:hidden">
-            <strong>Good:</strong> By using CSS and fonts only, we will have all the advantages<br /> of displaying techniques at the convenience of a jqueryUI plugin.
-
-            <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> Cheers!</a>
-            <span class="pull-right">&nbsp;</span>
-            <!-- <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-thumbs-up"></i> I'll buy you a beer!</a>-->
-        </div>
-        <div class="alert alert-success" style="overflow:hidden">
-            <strong>Good:</strong> Everything thats broken here is pretty easy to fix
-
-            <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> Cheers!</a>
-            <span class="pull-right">&nbsp;</span>
-            <!-- <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-thumbs-up"></i> I'll buy you a beer!</a>-->
-        </div>
-        <h2>Portlets</h2>
-        <div class="column">
-
-            <div class="portlet">
-                <div class="portlet-header">Feeds</div>
-                <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-
-            <div class="portlet">
-                <div class="portlet-header">News</div>
-                <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-
-        </div>
-
-        <div class="column">
-
-            <div class="portlet">
-                <div class="portlet-header">Shopping</div>
-                <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-
-        </div>
-
-        <div class="column">
-
-            <div class="portlet">
-                <div class="portlet-header">Links</div>
-                <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-
-            <div class="portlet">
-                <div class="portlet-header">Images</div>
-                <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
-            </div>
-
-        </div>
-
-        <div class="clearfix"></div>
-        <hr />
-        <h2>Menu</h2>
-        <ul id="menu">
-            <li class="ui-state-disabled"><a href="#">Aberdeen</a></li>
-            <li><a href="#">Ada</a></li>
-            <li><a href="#">Adamsville</a></li>
-            <li><a href="#">Addyston</a></li>
-            <li>
-                <a href="#">Delphi</a>
-                <ul>
-                    <li class="ui-state-disabled"><a href="#">Ada</a></li>
-                    <li><a href="#">Saarland</a></li>
-                    <li><a href="#">Salzburg</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Saarland</a></li>
-            <li>
-                <a href="#">Salzburg</a>
-                <ul>
-                    <li>
-                        <a href="#">Delphi</a>
-                        <ul>
-                            <li><a href="#">Ada</a></li>
-                            <li><a href="#">Saarland</a></li>
-                            <li><a href="#">Salzburg</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Delphi</a>
-                        <ul>
-                            <li><a href="#">Ada</a></li>
-                            <li><a href="#">Saarland</a></li>
-                            <li><a href="#">Salzburg</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Perch</a></li>
-                </ul>
-            </li>
-            <li class="ui-state-disabled"><a href="#">Amesville</a></li>
-        </ul>
+    <h2>jQueryUI LESS for TWBS 3.0.0</h2>
+    <h3>Make jQueryUI Widgets Blend in with Bootstrap Themes</h3>
+    <p>This is the demopage for jquery-ui-twbs-less. Derived from lphuberdeau's jquery-ui-less.</p>
+    <p>
+        Play around here switching between the demo themes or go to the project page on
+        <a href="https://github.com/DC-development/jquery-ui-less">github</a>.
+    </p>
+    <p>
+    <h4>It uses:</h4>
+    <ul>
+        <li>
+            jquery v1.11.0
+        </li>
+        <li>
+            jquery-ui v1.10.4 (custom build with no theme)
+        </li>
+        <li>
+            bootstrap
+        </li>
+    </ul>
+    <p>
+    <h4>Files to generate from:</h4>
+    <div class ="well">
+        <b>less/jquery.ui.less</b>, <br />which includes the variables and the jquery-ui-all file. This is the file to compile back to CSS.</li>
+        <b>less/jquery.ui.variables.less</b>,<br /> containing all extracted variables.</li>
     </div>
-    <div class="col-md-4">
+    </p>
+    <hr />
+    <h2>jQgrid Demo</h2>
+    <table id="articles"></table>
+    <div id="articlePager"></div>
+    <hr />
+    <div class="alert alert-danger" style="overflow:hidden">
+        <strong>Bad:</strong> Some icons are not registered in var's, yet ! <br />
+        Everywhere you see a little <i class="glyphicon glyphicon-question-sign"></i> instead of the correct icon.
 
-        <h2>Datepicker</h2>
-        <p>Date: <input type="text" id="datepicker"></p>
+        <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> I don't mind</a>
+        <span class="pull-right">&nbsp;</span>
+        <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-tree-deciduous"></i> I'll fix it !</a>
+    </div>
+    <div class="alert alert-danger" style="overflow:hidden">
+        <strong>Bad:</strong> Some default colors are not exchanged for twbs-vars, yet ! <br />
+        Everywhere you see rather strange, not fitting colors.
 
-        <hr />
-        <h2>Dialog</h2>
-        <span id="openDialogBtn" class="btn btn-primary">Open Dialog</span>
-        <div id="dialog-confirm" title="Empty the recycle bin?" class="hidden">
-            <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+        <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> I don't mind</a>
+        <span class="pull-right">&nbsp;</span>
+        <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-tree-deciduous"></i> I'll fix it !</a>
+    </div>
+    <div class="alert alert-success" style="overflow:hidden">
+        <strong>Good:</strong> By using CSS and fonts only, we will have all the advantages<br /> of displaying techniques at the convenience of a jqueryUI plugin.
+
+        <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> Cheers!</a>
+        <span class="pull-right">&nbsp;</span>
+        <!-- <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-thumbs-up"></i> I'll buy you a beer!</a>-->
+    </div>
+    <div class="alert alert-success" style="overflow:hidden">
+        <strong>Good:</strong> Everything thats broken here is pretty easy to fix
+
+        <a class="btn btn-xs btn-primary pull-right" data-dismiss="alert" aria-hidden="true"><i class="glyphicon glyphicon-remove"></i> Cheers!</a>
+        <span class="pull-right">&nbsp;</span>
+        <!-- <a class="btn btn-xs btn-success pull-right" href="https://github.com/DC-development/jquery-ui-less" aria-hidden="true"><i class="glyphicon glyphicon-thumbs-up"></i> I'll buy you a beer!</a>-->
+    </div>
+    <h2>Portlets</h2>
+    <div class="column">
+
+        <div class="portlet">
+            <div class="portlet-header">Feeds</div>
+            <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
         </div>
-        <hr />
-        <h2>Slider</h2>
-        <p>
-            <label for="amount">Target sales goal (Millions):</label>
-            <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
-        </p>
-        <div id="slider-range" style="width:250px;"></div>
 
-
-        <!-- <h2>Table</h2>
-        <table id="articles"></table>
-        <div id="articlePager"></div> -->
-        <hr />
-
-        <hr />
-        <h2>Accordeon</h2>
-        <div id="accordion">
-            <h3>Section 1</h3>
-            <div>
-                <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
-            </div>
-            <h3>Section 2</h3>
-            <div>
-                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
-            </div>
-            <h3>Section 3</h3>
-            <div>
-                <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-                <ul>
-                    <li>List item one</li>
-                    <li>List item two</li>
-                    <li>List item three</li>
-                </ul>
-            </div>
-            <h3>Section 4</h3>
-            <div>
-                <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-            </div>
+        <div class="portlet">
+            <div class="portlet-header">News</div>
+            <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
         </div>
+
     </div>
 
+    <div class="column">
 
-    <div class="col-md-8">
+        <div class="portlet">
+            <div class="portlet-header">Shopping</div>
+            <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+        </div>
 
     </div>
-    <div class="col-md-4">
+
+    <div class="column">
+
+        <div class="portlet">
+            <div class="portlet-header">Links</div>
+            <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+        </div>
+
+        <div class="portlet">
+            <div class="portlet-header">Images</div>
+            <div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+        </div>
 
     </div>
+
+    <div class="clearfix"></div>
+    <hr />
+    <h2>Menu</h2>
+    <ul id="menu">
+        <li class="ui-state-disabled"><a href="#">Aberdeen</a></li>
+        <li><a href="#">Ada</a></li>
+        <li><a href="#">Adamsville</a></li>
+        <li><a href="#">Addyston</a></li>
+        <li>
+            <a href="#">Delphi</a>
+            <ul>
+                <li class="ui-state-disabled"><a href="#">Ada</a></li>
+                <li><a href="#">Saarland</a></li>
+                <li><a href="#">Salzburg</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Saarland</a></li>
+        <li>
+            <a href="#">Salzburg</a>
+            <ul>
+                <li>
+                    <a href="#">Delphi</a>
+                    <ul>
+                        <li><a href="#">Ada</a></li>
+                        <li><a href="#">Saarland</a></li>
+                        <li><a href="#">Salzburg</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Delphi</a>
+                    <ul>
+                        <li><a href="#">Ada</a></li>
+                        <li><a href="#">Saarland</a></li>
+                        <li><a href="#">Salzburg</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Perch</a></li>
+            </ul>
+        </li>
+        <li class="ui-state-disabled"><a href="#">Amesville</a></li>
+    </ul>
+    <div class="clearfix"></div>
+
+
+</div>
+<div class="col-md-4">
+
+    <h2>Datepicker</h2>
+    <p>Date: <input type="text" id="datepicker"></p>
+
+    <hr />
+    <h2>Dialog</h2>
+    <span id="openDialogBtn" class="btn btn-primary">Open Dialog</span>
+    <div id="dialog-confirm" title="Empty the recycle bin?" class="hidden">
+        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+    </div>
+    <hr />
+    <h2>Slider</h2>
+    <p>
+        <label for="amount">Target sales goal (Millions):</label>
+        <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+    </p>
+    <div id="slider-range" style="width:250px;"></div>
+
+
+    <!-- <h2>Table</h2>
+    <table id="articles"></table>
+    <div id="articlePager"></div> -->
+    <hr />
+
+    <hr />
+    <h2>Accordeon</h2>
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+            <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+            </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-md-8">
+
+</div>
+<div class="col-md-4">
+
+</div>
 </div>
 
 </div> <!-- /container -->
@@ -284,6 +293,16 @@
 <script src="assets/jquery.1.11.0.min.js"></script>
 <script src="assets/jquery-ui-1.10.4.custom.js"></script>
 <script src="assets/bootstrap.min.js"></script>
+
+<!-- jQGrid scripts -->
+<script src="assets/jqgrid/js/jquery.jqGrid.min.js"></script>
+<script src="assets/jqgrid/js/i18n/grid.locale-en.js"></script>
+
+<script type="text/javascript">
+    $.jgrid.no_legacy_api = true;
+</script>
+
+<script src="assets/article.grid.js" type="text/javascript"></script>
 
 <script>
     $(function() {
