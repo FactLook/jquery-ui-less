@@ -100,8 +100,23 @@ tr.ui-search-toolbar select {margin: 1px 0 0 0}
 .ui-jqgrid .ui-pg-button span { display: block; margin: 1px; float:left;}
 .ui-jqgrid .ui-pg-button:hover { border: 0; }
 .ui-jqgrid .ui-state-disabled:hover {padding:1px;}
-.ui-jqgrid .ui-pg-input { height:13px;font-size:.8em; margin: 0;}
-.ui-jqgrid .ui-pg-selbox {font-size:.8em; line-height:18px; display:block; height:18px; margin: 0;}
+.ui-jqgrid .ui-pg-input {
+  display: inline;
+  padding:0;
+  width:auto;
+  height:18px;
+  font-size:.8em; 
+  margin: 0;
+
+}
+.ui-jqgrid .ui-pg-selbox {
+  font-size:.8em; 
+  line-height:18px; 
+  display:block; 
+  height:18px; 
+  margin: 0;
+  padding: 0;
+}
 .ui-jqgrid .ui-separator {height: 18px; border-left: 1px solid #ccc ; border-right: 1px solid #ccc ; margin: 1px; float: right;}
 .ui-jqgrid .ui-paging-info {font-weight: normal;height:19px; margin-top:3px;margin-right:4px;}
 .ui-jqgrid .ui-jqgrid-pager .ui-pg-div {padding:1px 0;float:left;position:relative;}
@@ -156,11 +171,19 @@ tr.ui-search-toolbar select {margin: 1px 0 0 0}
 .ui-jqdialog-content .FormGrid {margin: 0;}
 .ui-jqdialog-content .EditTable { width: 100%; margin-bottom:0;}
 .ui-jqdialog-content .DelTable { width: 100%; margin-bottom:0;}
-.EditTable td input, .EditTable td select, .EditTable td textarea {margin: 0;}
-.EditTable td textarea { width:auto; height:auto;}
+.EditTable td input, .EditTable td select, .EditTable td textarea {
+  .form-control;
+}
+.EditTable td textarea {
+  .form-control;
+  width:auto; 
+  height:auto;
+}
 .ui-jqdialog-content td.EditButton {text-align: right;border-top: 0 none;border-left: 0 none;border-right: 0 none; padding-bottom:5px; padding-top:5px;}
 .ui-jqdialog-content td.navButton {text-align: center; border-left: 0 none;border-top: 0 none;border-right: 0 none; padding-bottom:5px; padding-top:5px;}
-.ui-jqdialog-content input.FormElement {padding:.3em}
+.ui-jqdialog-content input.FormElement {   
+  padding:.3em
+}
 .ui-jqdialog-content select.FormElement {padding:.3em}
 .ui-jqdialog-content .data-line {padding-top:.1em;border: 0 none;}
 

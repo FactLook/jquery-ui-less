@@ -1,7 +1,7 @@
 $(document).ready(function () {
     lastsel3 = '';
     function pickdates(id){
-        jQuery("#"+id+"_date","#articles").datepicker();
+        jQuery("#"+id+"_headline","#articles").datepicker();
     }
     $('#datepicker').datepicker();
     jQuery("#articles").jqGrid({
@@ -34,7 +34,7 @@ $(document).ready(function () {
         sortname: 'id',
         viewrecords: true,
         sortorder: "desc",
-        multiselect: true,
+        multiselect: false,
         loadonce: true,
         jsonReader: {
             repeatitems : false
