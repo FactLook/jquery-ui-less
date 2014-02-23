@@ -75,6 +75,7 @@
 
     <div class="col-md-12">
         <div class="col-md-8">
+            
             <h2>jQueryUI LESS for TWBS 3.0.0</h2>
             <h3>Make jQueryUI Widgets Blend in with Bootstrap Themes</h3>
             <p>This is the demopage for jquery-ui-twbs-less. Derived from lphuberdeau's jquery-ui-less.</p>
@@ -212,6 +213,12 @@
                 </li>
                 <li class="ui-state-disabled"><a href="#">Amesville</a></li>
             </ul>
+            <div class="clearfix"></div>
+            <hr />
+            <h2>Table Demo</h2>
+            <table id="articles"></table>
+            <div id="articlePager"></div>
+            <hr />
         </div>
         <div class="col-md-4">
             
@@ -284,6 +291,16 @@
 <script src="assets/jquery.1.11.0.min.js"></script>
 <script src="assets/jquery-ui-1.10.4.custom.js"></script>
 <script src="assets/bootstrap.min.js"></script>
+
+<!-- jQGrid scripts -->
+<script src="assets/jqgrid/js/jquery.jqGrid.min.js"></script>
+<script src="assets/jqgrid/js/i18n/grid.locale-en.js"></script>
+
+<script type="text/javascript">
+    $.jgrid.no_legacy_api = true;
+</script>
+
+<script src="assets/article.grid.js" type="text/javascript"></script>
 
 <script>
     $(function() {
