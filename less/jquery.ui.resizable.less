@@ -12,7 +12,7 @@
 	position: relative;
 }
 .ui-resizable-handle {
-	position: absolute;
+	position: absolute!important;
 	font-size: 0.1px;
 	display: block;
 }
@@ -55,6 +55,17 @@
 	right: 1px;
 	bottom: 1px!important; //FIxes the position wich gets broken by mixin (ui-icon)
     top: auto!important;
+  
+}
+.ui-resizable-se.ui-icon {
+  padding: 0!important;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+
+  transform: rotate(90deg);
+  font-size: 9px;
 }
 .ui-resizable-sw {
 	cursor: sw-resize;

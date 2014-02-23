@@ -30,10 +30,16 @@
 .ui-widget select,
 .ui-widget textarea,
 .ui-widget button {
-	font-family: @ui_ffDefault;
-	font-size: 1em;
-    .form-control;
+  font-family: @ui_ffDefault;
+  font-size: 1em;
 }
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea{
+  .form-control;
+}
+
 .ui-widget-content {
 	border: 1px solid @ui_borderColorContent;
 	//background: @ui_bgColorContent @ui_bgImgUrlContent @ui_bgContentXPos @ui_bgContentYPos @ui_bgContentRepeat;
@@ -283,7 +289,10 @@
 .ui-icon-comment {              .glyphicon-question-sign;}
 .ui-icon-person {               .glyphicon-question-sign;}
 .ui-icon-print {                .glyphicon-question-sign;}
-.ui-icon-trash {                .glyphicon-trash;}
+.ui-icon-trash {                .glyphicon-trash;
+  
+  .btn-danger!important;
+}
 .ui-icon-locked {               .glyphicon-question-sign;}
 .ui-icon-unlocked {             .glyphicon-question-sign;}
 .ui-icon-bookmark {             .glyphicon-question-sign;}
@@ -292,7 +301,10 @@
 .ui-icon-flag {                 .glyphicon-question-sign;}
 .ui-icon-calendar {             .glyphicon-question-sign;}
 .ui-icon-cart {                 .glyphicon-question-sign;}
-.ui-icon-pencil {               .glyphicon-pencil;}
+.ui-icon-pencil {               .glyphicon-pencil;
+    .btn-default;
+    .btn-primary;
+  }
 .ui-icon-clock {                .glyphicon-question-sign;}
 .ui-icon-disk {                 .glyphicon-floppy-disk;}
 .ui-icon-calculator {           .glyphicon-question-sign;}
@@ -305,7 +317,11 @@
 .ui-icon-star {       .glyphicon-question-sign;}
 .ui-icon-link {       .glyphicon-question-sign;}
 .ui-icon-cancel {     .glyphicon-remove;}
-.ui-icon-plus {       .glyphicon-plus;}
+.ui-icon-plus {       
+  .glyphicon-plus;
+  .btn-default;
+  .btn-success;
+}
 .ui-icon-plusthick {  .glyphicon-plus;}
 .ui-icon-minus {      .glyphicon-question-sign;}
 .ui-icon-minusthick { .glyphicon-minus;}
@@ -353,9 +369,9 @@
 .ui-icon-circle-minus {     .glyphicon-question-sign;}
 .ui-icon-circle-close {     .glyphicon-question-sign;}
 .ui-icon-circle-triangle-e { .glyphicon-circle-arrow-right; }
-.ui-icon-circle-triangle-s { .glyphicon-circle-arrow-down; }
+.ui-icon-circle-triangle-s { .glyphicon-collapse-down; }
 .ui-icon-circle-triangle-w { .glyphicon-circle-arrow-left; }
-.ui-icon-circle-triangle-n { .glyphicon-circle-arrow-up; }
+.ui-icon-circle-triangle-n { .glyphicon-collapse-up; }
 .ui-icon-circle-arrow-e {         .glyphicon-question-sign;}
 .ui-icon-circle-arrow-s {         .glyphicon-question-sign;}
 .ui-icon-circle-arrow-w {         .glyphicon-question-sign;}
@@ -373,7 +389,7 @@
 .ui-icon-grip-dotted-horizontal { .glyphicon-question-sign;}
 .ui-icon-grip-solid-vertical {    .glyphicon-question-sign;}
 .ui-icon-grip-solid-horizontal {  .glyphicon-question-sign;}
-.ui-icon-gripsmall-diagonal-se {  .glyphicon-question-sign;}
+.ui-icon-gripsmall-diagonal-se {  .glyphicon-resize-full;}
 .ui-icon-grip-diagonal-se {       .glyphicon-question-sign;}
 
 
