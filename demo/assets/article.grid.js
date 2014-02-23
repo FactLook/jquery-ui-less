@@ -9,16 +9,14 @@ $(document).ready(function () {
 
         url: "assets/article-grd-data.js",
 
-        colNames:['Id','Headline', 'Subline', 'Body','Author','Date','Country','City'],
+        colNames:['Id','Headline', 'Subline', 'Body','Author'],
         colModel:[
             {name:'id',index:'id', width:20, sorttype:"int", editable:false},
             {name:'headline',index:'headline', width:150,editable:true,editrules:{text:true}, sorttype:"date"},
             {name:'subline',index:'subline', width:150,editable:true,editrules:{text:true}},
             {name:'body',index:'body', width:250, align:"left",editable:true,editrules:{text:true},sorttype:"text"},
             {name:'author',index:'author', width:80, align:"left",editable:true,editrules:{text:true},sorttype:"float"},
-            {name:'date',index:'date', width:74,align:"left",editable:true},
-            {name:'country',index:'country', width:30,align:"center",editable:true,editrules:{text:true}, sortable:false},
-            {name:'city',index:'city', width:100,editable:true,editrules:{text:true}, sortable:false}
+            
         ],
         onSelectRow: function(id){
             //alert(id);
