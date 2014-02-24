@@ -1,4 +1,4 @@
-# JQuery-UI LESS Adaption for TWBS 3
+# JQuery-UI LESS adapter for TWBS 3
 
 ## v0.1.1
 
