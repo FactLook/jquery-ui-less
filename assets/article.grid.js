@@ -11,11 +11,11 @@ $(document).ready(function () {
 
         colNames:['Id','Headline', 'Subline', 'Body','Author'],
         colModel:[
-            {name:'id',index:'id', width:20, sorttype:"int", editable:false},
-            {name:'headline',index:'headline', width:150,editable:true,editrules:{text:true}, sorttype:"date"},
-            {name:'subline',index:'subline', width:150,editable:true,editrules:{text:true}},
-            {name:'body',index:'body', width:250, align:"left",editable:true,editrules:{text:true},sorttype:"text"},
-            {name:'author',index:'author', width:80, align:"left",editable:true,editrules:{text:true},sorttype:"float"},
+            {name:'id',index:'id', width:40, sorttype:"int", editable:false},
+            {name:'headline',index:'headline', width:150, editable:true, editrules:{text:true}},
+            {name:'subline',index:'subline', width:150, editable:true, editrules:{text:true}},
+            {name:'body',index:'body', width:250, align:"left", editable:true, editrules:{text:true}},
+            {name:'author',index:'author', width:120, align:"left", editable:true, editrules:{text:true}},
             
         ],
         onSelectRow: function(id){
