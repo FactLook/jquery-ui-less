@@ -1,8 +1,7 @@
 {
-	"name": "jquery-ui-less",
-	"license": "MIT",
-	"version": "0.1.0",
+	"name": "jquery-ui-twbs-less",
+	"version": "0.1.1",
 	"dependencies": {
-		"async": "*"
+		"jquery.ui": "1.11.0"
 	}
 }
