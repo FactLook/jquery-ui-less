@@ -20,11 +20,7 @@ Example usage:
 
 @import "../bootstrap/less/bootstrap";
 @import "../less/jquery.ui.less";
-
-@import "themes/variables_cerulean";
-@import "themes/bootswatch_cerulean";
-
-@import "demovars.less";
+...
 
 ```
 
