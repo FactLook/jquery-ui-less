@@ -34,7 +34,7 @@
  * http://jquery.org/license
  *
  * http://docs.jquery.com/UI/Accordion#theming
- */.ui-accordion .ui-accordion-header{color:#c8c8c8;background-color:#3e444c;border-color:rgba(0,0,0,0.6)}.ui-accordion .ui-accordion-header+.panel-collapse .panel-body{border-top-color:rgba(0,0,0,0.6)}.ui-accordion .ui-accordion-content{padding:1em 2.2em;border-top:0;overflow:auto}/*!
+ */.ui-accordion .ui-accordion-header{color:#c8c8c8;background-color:#3e444c;border-color:rgba(0,0,0,0.6);font-size:18px;padding:.2em}.ui-accordion .ui-accordion-header+.panel-collapse .panel-body{border-top-color:rgba(0,0,0,0.6)}.ui-accordion .ui-accordion-header .ui-accordion-header-icon{margin-right:.2em}.ui-accordion .ui-accordion-content{padding:1em 2.2em;border-top:0;overflow:auto}/*!
  * jQuery UI Autocomplete @VERSION
  * http://jqueryui.com
  *
