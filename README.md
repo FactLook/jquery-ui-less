@@ -1,6 +1,6 @@
 # JQuery-UI LESS adapter for TWBS 3
 
-## v0.1.2dev
+## v0.1.2 dev
 
 Have consistent (themeable) styles
 from TWBS with jQuery UI components. 
