@@ -30,3 +30,7 @@ Example usage:
 
 The demo only contains generated css (beside the demo-less files).
 The themes are downloaded here: http://bootswatch.com/yeti/. 
+
+-----------
+
+the translation of the bootstrap vars should be done in jquery.ui.variables.less 
