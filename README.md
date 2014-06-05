@@ -28,3 +28,5 @@ Example usage:
 
 ```
 
+The demo only contains generated css (beside the demo-less files).
+The themes are downloaded here: http://bootswatch.com/yeti/. 
