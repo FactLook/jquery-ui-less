@@ -1318,27 +1318,40 @@ body .ui-tooltip {
 /* caption*/
 .ui-jqgrid .ui-jqgrid-titlebar {
   position: relative;
-  border-left: 0 none;
-  border-top: 0 none;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-top-style: hidden;
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  border-bottom-color: #dddddd;
 }
 .ui-jqgrid .ui-jqgrid-titlebar > .dropdown .dropdown-toggle {
   color: inherit;
 }
 .ui-jqgrid .ui-jqgrid-title {
-  float: left;
-  margin: .1em 0 .2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.ui-jqgrid .ui-jqgrid-title > a,
+.ui-jqgrid .ui-jqgrid-title > small,
+.ui-jqgrid .ui-jqgrid-title > .small,
+.ui-jqgrid .ui-jqgrid-title > small > a,
+.ui-jqgrid .ui-jqgrid-title > .small > a {
+  color: inherit;
 }
 .ui-jqgrid .ui-jqgrid-titlebar-close {
-  float: right !important;
-  margin: 1px;
-  border-radius: 4px;
+  position: absolute;
 }
 .ui-jqgrid .ui-jqgrid-titlebar-close:hover {
   border: 0;
+}
+.ui-jqgrid .ui-jqgrid-titlebar-close .ui-icon {
+  background-color: transparent;
+  border-style: hidden;
 }
 /* header*/
 .ui-jqgrid .ui-jqgrid-hdiv {
