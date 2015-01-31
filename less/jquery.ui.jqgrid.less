@@ -2,30 +2,37 @@
 .ui-jqgrid {position: relative; line-height: auto;}
 .ui-jqgrid .ui-jqgrid-view {position: relative;left:0; top: 0; padding: 0; }
 /* caption*/
-.ui-jqgrid .ui-jqgrid-titlebar {
-  //padding: .3em .2em .2em .3em;
-  position: relative;
-  border-left: 0 none;
+.ui-jqgrid
+{
+    .ui-jqgrid-titlebar
+    {
+        position: relative;
+        border-left-style: hidden;
+        border-right-style: hidden;
+        border-top-style: hidden;
+        .panel-heading;// This wouldn't necessary, if the container wasn't double in the case of jQGrid
+        border-bottom-color: @panel-default-border;
+    }
+    .ui-jqgrid-title
+    {
+        .panel-title;
+    }
+    .ui-jqgrid-titlebar-close
+    {
+        position: absolute;
 
-  border-top: 0 none;
-  .panel-heading;// This wouln't necessary, if the containr wasnt double in th case of jQGrid
+        &:hover
+        {
+            border: 0;
+        }
+        .ui-icon
+        {
+            background-color: transparent;
+            border-style: hidden;
+        }
+    }
 }
 
-.ui-jqgrid .ui-jqgrid-title { float: left; margin: .1em 0 .2em; }
-.ui-jqgrid .ui-jqgrid-titlebar-close {
-  .pull-right;
-  margin: 1px;
-  border-radius: @border-radius-base;
-
-}
-.ui-jqgrid .ui-jqgrid-titlebar-close span {
-
-}
-
-.ui-jqgrid .ui-jqgrid-titlebar-close:hover {
-  border:0;
-
-}
 /* header*/
 .ui-jqgrid .ui-jqgrid-hdiv {
   position: relative;
