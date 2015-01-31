@@ -5,6 +5,7 @@ module.exports = function ( grunt ) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-gh-pages');
 
     var userConfig = require( './build.config.js' );
 
@@ -145,6 +146,12 @@ module.exports = function ( grunt ) {
                 files: [ '<%= app_files.demodir %>/**/*.*' ],
                 tasks: [ 'copy:build_demo' ]
             }
+        },
+        'gh-pages': {
+            options: {
+                base: 'build'
+            },
+            src: ['**']
         },
     };
 
