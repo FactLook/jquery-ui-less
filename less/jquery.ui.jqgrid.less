@@ -3,28 +3,28 @@
 .ui-jqgrid .ui-jqgrid-view {position: relative;left:0; top: 0; padding: 0; }
 /* caption*/
 .ui-jqgrid .ui-jqgrid-titlebar {
-  //padding: .3em .2em .2em .3em; 
-  position: relative; 
+  //padding: .3em .2em .2em .3em;
+  position: relative;
   border-left: 0 none;
 
   border-top: 0 none;
-  .panel-heading;// This wouln't necessary, if the containr wasnt double in th case of jQGrid 
+  .panel-heading;// This wouln't necessary, if the containr wasnt double in th case of jQGrid
 }
 
 .ui-jqgrid .ui-jqgrid-title { float: left; margin: .1em 0 .2em; }
-.ui-jqgrid .ui-jqgrid-titlebar-close { 
+.ui-jqgrid .ui-jqgrid-titlebar-close {
   .pull-right;
   margin: 1px;
   border-radius: @border-radius-base;
-  
+
 }
-.ui-jqgrid .ui-jqgrid-titlebar-close span { 
-  
+.ui-jqgrid .ui-jqgrid-titlebar-close span {
+
 }
 
 .ui-jqgrid .ui-jqgrid-titlebar-close:hover {
   border:0;
-  
+
 }
 /* header*/
 .ui-jqgrid .ui-jqgrid-hdiv {
@@ -35,7 +35,7 @@
   border-left: 0 none !important;
   border-top : 0 none !important;
   border-right : 0 none !important;
-  
+
 }
 /* content table */
 div.ui-jqgrid-view table.ui-jqgrid-btable
@@ -55,10 +55,10 @@ div.ui-jqgrid-view table.ui-jqgrid-btable
 .ui-jqgrid .ui-th-div-ie {white-space: nowrap; zoom :1; height:17px;}
 .ui-jqgrid .ui-jqgrid-resize {height:20px !important;position: relative; cursor :e-resize;display: inline;overflow: hidden;}
 .ui-jqgrid .ui-grid-ico-sort {
-  font-size:8px; 
+  font-size:8px;
   overflow:hidden;
   position:absolute;
-  display:inline; 
+  display:inline;
   cursor: pointer !important;
   border: 0!important;
   background-color: transparent!important;
@@ -75,23 +75,27 @@ tr.ui-search-toolbar select {margin: 1px 0 0 0}
 /* body */
 .ui-jqgrid .ui-jqgrid-bdiv {position: relative; margin: 0; padding:0; overflow: auto; text-align:left;}
 .ui-jqgrid .ui-jqgrid-btable {
-  table-layout:fixed; 
-  margin:0; 
-  outline-style: none; 
-  
+  table-layout:fixed;
+  margin:0;
+  outline-style: none;
+
 }
-.ui-jqgrid tr.jqgrow { 
-  outline-style: none; 
+.ui-jqgrid tr.jqgrow {
+  outline-style: none;
   border: 0;
+  .ui-state-hover
+  {
+     background-color: @table-bg-hover
+  }
 }
 .ui-jqgrid tr.jqgroup { outline-style: none; }
 .ui-jqgrid tr.jqgrow td {font-weight: normal; overflow: hidden; white-space: pre; height: 22px;padding: 6px 6px 6px 8px;border-bottom-width: 1px; border-bottom-color: @panel-default-border; border-bottom-style: solid;}
 .ui-jqgrid tr.jqgfirstrow td {padding: 0 2px 0 2px;border-right-width: 1px; border-right-style: solid;}
 .ui-jqgrid tr.jqgroup td {font-weight: normal; overflow: hidden; white-space: pre; height: 22px;padding: 6px 6px 6px 8px;border-bottom-width: 1px; border-bottom-color: @panel-default-border; border-bottom-style: solid;}
 .ui-jqgrid tr.jqfoot td {font-weight: bold; overflow: hidden; white-space: pre; height: 22px;padding: 0 2px 0 2px;border-bottom-width: 1px; border-bottom-color: @panel-default-border; border-bottom-style: solid;}
-.ui-jqgrid tr.ui-row-ltr td {text-align:left;border-right-width: 1px; 
+.ui-jqgrid tr.ui-row-ltr td {text-align:left;border-right-width: 1px;
   border-right-color: @panel-default-border; border-right-style: solid;}
-.ui-jqgrid tr.ui-row-rtl td {text-align:right;border-left-width: 1px; 
+.ui-jqgrid tr.ui-row-rtl td {text-align:right;border-left-width: 1px;
   border-left-color: @panel-default-border; border-left-style: solid;}
 .ui-jqgrid td.jqgrid-rownum { padding: 0 2px 0 2px; margin: 0; border: 0 none;}
 .ui-jqgrid .ui-jqgrid-resize-mark { width:2px; left:0; background-color:#777; cursor: e-resize; cursor: col-resize; position:absolute; top:0; height:100px; overflow:hidden; display:none; border:0 none; z-index: 99999;}
@@ -102,12 +106,12 @@ tr.ui-search-toolbar select {margin: 1px 0 0 0}
 .ui-jqgrid tr.footrow-ltr td {text-align:left;border-right-width: 1px; border-right-color: @panel-default-border; border-right-style: solid;}
 .ui-jqgrid tr.footrow-rtl td {text-align:right;border-left-width: 1px; border-left-color: @panel-default-border; border-left-style: solid;}
 /* Pager*/
-.ui-jqgrid .ui-jqgrid-pager { 
+.ui-jqgrid .ui-jqgrid-pager {
   border-left: 0 none !important;
-  border-bottom: 0 none !important; 
-  margin: 0 !important; 
+  border-bottom: 0 none !important;
+  margin: 0 !important;
   padding: 0 !important;
-  position: relative; 
+  position: relative;
   height: auto;
   white-space: nowrap;
   overflow: hidden;
@@ -125,15 +129,15 @@ tr.ui-search-toolbar select {margin: 1px 0 0 0}
   padding:0;
   width:auto;
   height:18px;
-  font-size:.8em; 
+  font-size:.8em;
   margin: 0;
 
 }
 .ui-jqgrid .ui-pg-selbox {
-  font-size:.8em; 
-  line-height:18px; 
-  display:block; 
-  height:18px; 
+  font-size:.8em;
+  line-height:18px;
+  display:block;
+  height:18px;
   margin: 0;
   padding: 0;
 }
@@ -176,22 +180,22 @@ tr.ui-search-toolbar select {margin: 1px 0 0 0}
 .ui-jqdialog .ui-jqdialog-titlebar { padding: .3em .2em; position: relative;  }
 .ui-jqdialog .ui-jqdialog-title { margin: .1em 0 .2em; }
 
-.ui-jqdialog .ui-jqdialog-titlebar-close { 
+.ui-jqdialog .ui-jqdialog-titlebar-close {
   .pull-right;
   margin: 1px;
 }
 
 .ui-jqdialog .ui-jqdialog-titlebar-close span {
-  .ui-icon-closethick; 
+  .ui-icon-closethick;
 }
 
-.ui-jqdialog .ui-jqdialog-titlebar-close:hover, .ui-jqdialog .ui-jqdialog-titlebar-close:focus { 
+.ui-jqdialog .ui-jqdialog-titlebar-close:hover, .ui-jqdialog .ui-jqdialog-titlebar-close:focus {
   border: 0;
 }
 .ui-jqdialog-content, .ui-jqdialog .ui-jqdialog-content { border: 0; padding: .3em .2em; background: none; height:auto;}
 .ui-jqdialog .ui-jqconfirm {padding: .4em 1em; border-width:3px;position:absolute;bottom:10px;right:10px;overflow:visible;display:none;height:80px;width:220px;text-align:center;}
-.ui-jqdialog>.ui-resizable-se { 
-  bottom: -4px; 
+.ui-jqdialog>.ui-resizable-se {
+  bottom: -4px;
   right: 1px;
 }
 /** end Modal window*/
@@ -204,12 +208,12 @@ tr.ui-search-toolbar select {margin: 1px 0 0 0}
 }
 .EditTable td textarea {
   .form-control;
-  width:auto; 
+  width:auto;
   height:auto;
 }
 .ui-jqdialog-content td.EditButton {text-align: right;border-top: 0 none;border-left: 0 none;border-right: 0 none; padding-bottom:5px; padding-top:5px;}
 .ui-jqdialog-content td.navButton {text-align: center; border-left: 0 none;border-top: 0 none;border-right: 0 none; padding-bottom:5px; padding-top:5px;}
-.ui-jqdialog-content input.FormElement {   
+.ui-jqdialog-content input.FormElement {
   padding:.3em
 }
 .ui-jqdialog-content select.FormElement {padding:.3em}
@@ -242,9 +246,9 @@ tr.ui-search-toolbar select {margin: 1px 0 0 0}
 .fm-button-icon-right { padding-left:0.8em; }
 
 #pData .ui-icon, #nData .ui-icon{
-  
+
 }
-.fm-button-icon-left .ui-icon { 
+.fm-button-icon-left .ui-icon {
   .pull-left;
 }
 .fm-button-icon-right .ui-icon {
@@ -291,5 +295,3 @@ div.ui-jqgrid-view table.ui-jqgrid-htable
 {
   border-collapse:separate;
 }
-
-
