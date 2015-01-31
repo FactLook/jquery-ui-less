@@ -1,4 +1,5 @@
 node_modules
 components
 .idea
-demo/assets/themes
+build/
+bower_components/

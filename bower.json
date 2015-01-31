@@ -1,0 +1,30 @@
+{
+  "name": "jquery-ui-less",
+  "description": "jQuery based grid - MIT+GPL fork of jqGrid before licensing change",
+  "authors": [
+    "Andreas Flack"
+  ],
+  "homepage": "https://flack.github.com/jquery-ui-less",
+  "ignore": [
+    "less/",
+    "Gruntfile.js",
+    "build.config.js",
+    "package.json"
+  ],
+  "keywords": [
+    "jQuery UI",
+    "Bootstrap",
+    "theme"
+  ],
+  "license": "MIT GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/openpsa/jquery-ui-less.git"
+  },
+  "version": "0.1.4",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}
