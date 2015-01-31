@@ -1617,9 +1617,21 @@ tr.ui-search-toolbar select {
   display: inline;
   padding: 0;
   width: auto;
-  height: 18px;
   font-size: .8em;
   margin: 0;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+select.ui-jqgrid .ui-pg-input {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.ui-jqgrid .ui-pg-input,
+select[multiple].ui-jqgrid .ui-pg-input {
+  height: auto;
 }
 .ui-jqgrid .ui-pg-selbox {
   font-size: .8em;
@@ -1628,6 +1640,19 @@ tr.ui-search-toolbar select {
   height: 18px;
   margin: 0;
   padding: 0;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+select.ui-jqgrid .ui-pg-selbox {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.ui-jqgrid .ui-pg-selbox,
+select[multiple].ui-jqgrid .ui-pg-selbox {
+  height: auto;
 }
 .ui-jqgrid .ui-separator {
   height: 18px;
