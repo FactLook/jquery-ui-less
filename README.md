@@ -5,7 +5,7 @@
 Have consistent (themeable) styles
 from TWBS with jQuery UI components.
 
-This project contains a functional [demo](http://flack.github.io/jquery-ui-less/demo.html) with generated themes.
+This project contains a functional [demo](http://flack.github.io/jquery-ui-less/) with generated themes.
 
 Just clone this repo anywhere to your machine and browse the demo folder, to see how its used.
 If you want to use it standalone make sure you also clone the twbs submodule by using:
