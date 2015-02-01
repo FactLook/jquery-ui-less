@@ -7,7 +7,15 @@ module.exports = {
 
     app_files: {
         demodir: 'demo/',
-        less: 'less/build.less'
+        src: 'less/'
+    },
+    themes: {
+        'standalone': 'themes/standalone.less',
+        'default': 'themes/default.less',
+        'slate': 'themes/slate.less',
+        'cerulean': 'themes/cerulean.less',
+        'superhero': 'themes/superhero.less',
+        'flatly': 'themes/flatly.less',
     },
 
     test_files: {

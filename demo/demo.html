@@ -10,10 +10,7 @@
 
     <title>jQuery theming for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link id="mainStyleSheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="jquery-ui-less-0.1.4.css" rel="stylesheet">
+    <link id="mainStyleSheet" href="assets/css/default.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,12 +39,11 @@
                 <li><a href="https://github.com/flack/jquery-ui-less">Github</a></li>
                 <!-- <li><a href="#about">About</a></li>
                  <li><a href="#contact">Contact</a></li>-->
-                <li style="display: none" class="dropdown">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theme<b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a class="chooseTheme" id="default" href="#">Default</a></li>
                         <li><a class="chooseTheme" id="slate" href="#">Bootswatch Slate</a></li>
-                        <li><a class="chooseTheme" id="amelia" href="#">Bootswatch Amelia</a></li>
                         <li><a class="chooseTheme" id="cerulean" href="#">Bootswatch Cerulean</a></li>
                         <li><a class="chooseTheme" id="superhero" href="#">Bootswatch Superhero</a></li>
                         <li><a class="chooseTheme" id="flatly" href="#">Bootswatch Flatly</a></li>
@@ -382,9 +378,9 @@
                 " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
         $(".chooseTheme").on('click', function(e){
-            console.log('demo_'+this.id+'.css');
             e.preventDefault();
-            $('#mainStyleSheet').attr('href', 'demo_'+this.id+'.css');
+            $('#mainStyleSheet').attr('href', 'assets/css/' + this.id
+            + '.css');
         });
         $( "#tabs" ).tabs();
     });

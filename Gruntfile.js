@@ -97,9 +97,15 @@ module.exports = function ( grunt ) {
                         expand: true
                     },
                     {
-                        src: [ 'assets/**/*.*' ],
-                        dest: '<%= build_dir %>/',
-                        cwd: '<%= app_files.demodir %>',
+                        src: [ '**/*.*' ],
+                        dest: '<%= build_dir %>/assets',
+                        cwd: '<%= app_files.demodir %>/assets/',
+                        expand: true
+                    },
+                    {
+                        src: [ 'fonts/*.*' ],
+                        dest: '<%= build_dir %>/assets',
+                        cwd: 'bower_components/bootstrap/dist/',
                         expand: true
                     }
                 ]
@@ -112,12 +118,17 @@ module.exports = function ( grunt ) {
         less: {
             build: {
                 files: {
-                    '<%= build_dir %>/<%= filename %>.css': '<%= app_files.less %>'
+                    '<%= build_dir %>/<%= filename %>.css': '<%= themes.standalone %>',
+                    '<%= build_dir %>/assets/css/default.css': '<%= themes.default %>',
+                    '<%= build_dir %>/assets/css/slate.css': '<%= themes.slate %>',
+                    '<%= build_dir %>/assets/css/superhero.css': '<%= themes.superhero %>',
+                    '<%= build_dir %>/assets/css/flatly.css': '<%= themes.flatly %>',
+                    '<%= build_dir %>/assets/css/cerulean.css': '<%= themes.cerulean %>'
                 }
             },
             compile: {
                 files: {
-                    '<%= build_dir %>/<%= filename %>.min.css': '<%= app_files.less %>'
+                    '<%= build_dir %>/<%= filename %>.min.css': '<%= themes.default %>'
                 },
                 options: {
                     cleancss: true,
@@ -139,7 +150,7 @@ module.exports = function ( grunt ) {
             },
 
             less: {
-                files: [ 'less/*.less' ],
+                files: [ 'themes/*.less', 'less/*.less' ],
                 tasks: [ 'less:build' ]
             },
             demo: {
