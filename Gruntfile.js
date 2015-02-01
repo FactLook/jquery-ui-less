@@ -91,7 +91,7 @@ module.exports = function ( grunt ) {
             build_demo: {
                 files: [
                     {
-                        src: [ 'demo.html' ],
+                        src: [ 'index.html' ],
                         dest: '<%= build_dir %>/',
                         cwd: '<%= app_files.demodir %>',
                         expand: true
