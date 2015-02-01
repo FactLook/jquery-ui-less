@@ -637,6 +637,20 @@ fieldset[disabled] .ui-datepicker .ui-datepicker-next {
 .ui-datepicker .ui-datepicker-title select {
   font-size: 1em;
   margin: 1px 0;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  display: inline-block;
+}
+select.ui-datepicker .ui-datepicker-title select {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.ui-datepicker .ui-datepicker-title select,
+select[multiple].ui-datepicker .ui-datepicker-title select {
+  height: auto;
 }
 .ui-datepicker select.ui-datepicker-month-year {
   width: 100%;
@@ -2146,9 +2160,11 @@ textarea.EditTable td textarea {
   padding-left: 0.8em;
 }
 .fm-button-icon-left .ui-icon {
+  line-height: 2.3em;
   float: left !important;
 }
 .fm-button-icon-right .ui-icon {
+  line-height: 2.3em;
   float: right !important;
 }
 #nData,
@@ -2409,7 +2425,7 @@ textarea.ui-widget textarea {
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
   border: 1px solid #dddddd;
-  background: #ffffff url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+  background: #ffffff 50% 50% repeat-x;
   font-weight: normal;
   color: #333333;
 }
@@ -2440,7 +2456,7 @@ textarea.ui-widget textarea {
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
   border: 1px solid #337ab7;
-  background: #dff0d8 url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+  background: #dff0d8 50% 50% repeat-x;
   font-weight: normal;
   color: #ffffff;
 }
@@ -2456,7 +2472,7 @@ textarea.ui-widget textarea {
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
   border: 1px solid #337ab7;
-  background: #d9edf7 url(images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x;
+  background: #d9edf7 50% 50% repeat-x;
   color: #31708f;
 }
 .ui-state-highlight a,
@@ -2468,7 +2484,7 @@ textarea.ui-widget textarea {
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
   border: 1px solid #d9534f;
-  background: #f0ad4e url(images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;
+  background: #f0ad4e 50% 50% repeat-x;
   color: #cd0a0a;
 }
 .ui-state-error a,
@@ -3205,14 +3221,14 @@ textarea.ui-widget textarea {
 }
 /* Overlays */
 .ui-widget-overlay {
-  background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+  background: #aaaaaa 50% 50% repeat-x;
   opacity: 0.3;
   filter: alpha(opacity=30);
 }
 .ui-widget-shadow {
   margin: -8px 0 0 -8px;
   padding: 8px;
-  background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+  background: #aaaaaa 50% 50% repeat-x;
   opacity: 0.3;
   filter: alpha(opacity=30);
   border-radius: 8px;
