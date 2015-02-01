@@ -42,7 +42,6 @@
 
 .ui-widget-content {
 	border: 1px solid @ui_borderColorContent;
-	//background: @ui_bgColorContent @ui_bgImgUrlContent @ui_bgContentXPos @ui_bgContentYPos @ui_bgContentRepeat;
 	color: @ui_fcContent;
     background-color: @ui_bgColorContent;
     .panel-default;
@@ -52,7 +51,6 @@
 }
 .ui-widget-header {
 	border: 1px solid @ui_borderColorHeader;
-	//background: @ui_bgColorHeader @ui_bgImgUrlHeader @ui_bgHeaderXPos @ui_bgHeaderYPos @ui_bgHeaderRepeat;
 	color: @ui_fcHeader;
 	font-weight: bold;
     font-size: @font-size-large;
@@ -68,7 +66,7 @@
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	border: 1px solid @ui_borderColorDefault;
-	background: @ui_bgColorDefault @ui_bgImgUrlDefault @ui_bgDefaultXPos @ui_bgDefaultYPos @ui_bgDefaultRepeat;
+	background: @ui_bgColorDefault @ui_bgDefaultXPos @ui_bgDefaultYPos @ui_bgDefaultRepeat;
 	font-weight: @ui_fwDefault;
 	color: @ui_fcDefault;
 }
@@ -85,7 +83,6 @@
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	border: 1px solid @ui_borderColorHover;
-	//background: @ui_bgColorHover @ui_bgImgUrlHover @ui_bgHoverXPos @ui_bgHoverYPos @ui_bgHoverRepeat;
 	font-weight: @ui_fwDefault;
 	color: @ui_fcHover;
 }
@@ -100,7 +97,7 @@
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
 	border: 1px solid @ui_borderColorActive;
-	background: @ui_bgColorActive @ui_bgImgUrlActive @ui_bgActiveXPos @ui_bgActiveYPos @ui_bgActiveRepeat;
+	background: @ui_bgColorActive @ui_bgActiveXPos @ui_bgActiveYPos @ui_bgActiveRepeat;
 	font-weight: @ui_fwDefault;
 	color: @ui_fcActive;
 }
@@ -117,7 +114,7 @@
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
 	border: 1px solid @ui_borderColorHighlight;
-	background: @ui_bgColorHighlight @ui_bgImgUrlHighlight @ui_bgHighlightXPos @ui_bgHighlightYPos @ui_bgHighlightRepeat;
+	background: @ui_bgColorHighlight @ui_bgHighlightXPos @ui_bgHighlightYPos @ui_bgHighlightRepeat;
 	color: @ui_fcHighlight;
 }
 .ui-state-highlight a,
@@ -129,7 +126,7 @@
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
 	border: 1px solid @ui_borderColorError;
-	background: @ui_bgColorError @ui_bgImgUrlError @ui_bgErrorXPos @ui_bgErrorYPos @ui_bgErrorRepeat;
+	background: @ui_bgColorError @ui_bgErrorXPos @ui_bgErrorYPos @ui_bgErrorRepeat;
 	color: @ui_fcError;
 }
 .ui-state-error a,
@@ -175,33 +172,26 @@
 }
 .ui-icon,
 .ui-widget-content .ui-icon {
-  //background-image: @ui_iconsContent;   just left this here to see what it was sometimes
   background-image: none;
 }
 .ui-widget-header .ui-icon {
-  //background-image: @ui_iconsHeader;
   background-image: none;
 }
 .ui-state-default .ui-icon {
-  //background-image: @ui_iconsDefault;
   background-image: none;
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-  //background-image: @ui_iconsHover;
   background-image: none;
 }
 .ui-state-active .ui-icon {
-  //background-image: @ui_iconsActive;
   background-image: none;
 }
 .ui-state-highlight .ui-icon {
-  //background-image: @ui_iconsHighlight;
   background-image: none;
 }
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
-  //background-image: @ui_iconsError;
   background-image: none;
 }
 
@@ -425,14 +415,14 @@
 
 /* Overlays */
 .ui-widget-overlay {
-	background: @ui_bgColorOverlay @ui_bgImgUrlOverlay @ui_bgOverlayXPos @ui_bgOverlayYPos @ui_bgOverlayRepeat;
+	background: @ui_bgColorOverlay @ui_bgOverlayXPos @ui_bgOverlayYPos @ui_bgOverlayRepeat;
 	opacity: @ui_opacityOverlay;
 	filter: @ui_opacityFilterOverlay;
 }
 .ui-widget-shadow {
 	margin: @ui_offsetTopShadow 0 0 @ui_offsetLeftShadow;
 	padding: @ui_thicknessShadow;
-	background: @ui_bgColorShadow @ui_bgImgUrlShadow @ui_bgShadowXPos @ui_bgShadowYPos @ui_bgShadowRepeat;
+	background: @ui_bgColorShadow @ui_bgShadowXPos @ui_bgShadowYPos @ui_bgShadowRepeat;
 	opacity: @ui_opacityShadow;
 	filter: @ui_opacityFilterShadow;
 	border-radius: @ui_cornerRadiusShadow;
