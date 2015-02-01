@@ -5,6 +5,12 @@
     border-style: hidden;
 }
 
+.ui-head-row()
+{
+    background-color: @panel-default-heading-bg;
+    border-color: @panel-default-border;
+}
+
 /*Grid*/
 .ui-jqgrid
 {
@@ -22,7 +28,9 @@
         border-left-style: none;
         border-right-style: none;
         .panel-heading;// This wouldn't necessary, if the container wasn't double in the case of jQGrid
-        border-bottom-color: @panel-default-border;
+        background-color: @panel-bg;
+        border-color: @panel-default-border;
+        color: @panel-default-text;
     }
     .ui-jqgrid-title
     {
@@ -39,6 +47,7 @@
         .ui-icon
         {
             .ui-inline-icon;
+            color: @panel-default-text;
         }
     }
     table
@@ -51,16 +60,32 @@
 }
 
 /* header*/
-.ui-jqgrid > .ui-jqgrid-view > .ui-jqgrid-hdiv
+.ui-jqgrid > .ui-jqgrid-view
 {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: auto;
-    border-left-style: none;
-    border-right-style: none;
-    border-top-style: none;
+    > .ui-jqgrid-hdiv
+    {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: auto;
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+    }
+    th
+    {
+        .ui-head-row;
+    }
+    .ui-userdata
+    {
+        .ui-head-row;
+	height : 21px;
+        overflow: hidden;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-style: none;
+    }
 }
 
 .ui-jqgrid .ui-jqgrid-hbox {float: left; padding-right: 20px;}
@@ -328,6 +353,8 @@
         overflow: hidden;
         font-size: 11px;
         min-height: 22px;
+        .ui-head-row;
+
         .ui-pg-div
         {
             padding: 1px 0;
@@ -497,18 +524,6 @@
   height: inherit;
 }
 //* end loading div */
-//* toolbar */
-.ui-jqgrid
-{
-    & > .ui-jqgrid-view > .ui-userdata
-    {
-	height : 21px;
-        overflow: hidden;
-        border-left-style: none;
-        border-right-style: none;
-        border-bottom-style: none;
-    }
-}
 
 //*Modal Window */
 .ui-jqdialog
