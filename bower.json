@@ -6,7 +6,6 @@
   ],
   "homepage": "https://flack.github.com/jquery-ui-less",
   "ignore": [
-    "less/",
     "Gruntfile.js",
     "build.config.js",
     "package.json"
@@ -19,7 +18,7 @@
   "license": "MIT GPL-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/openpsa/jquery-ui-less.git"
+    "url": "git://github.com/FactLook/jquery-ui-less.git"
   },
   "version": "0.1.4",
   "dependencies": {
